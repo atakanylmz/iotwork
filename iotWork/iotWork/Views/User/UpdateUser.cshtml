@@ -2,7 +2,7 @@
 @{
     Layout = null;
 }
-    
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +12,7 @@
     <meta name="author" content="Mosaddek">
     <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <link rel="shortcut icon" href="/Content/img/favicon.png">
-    <title>AKILLI EV</title>
+    <title>Hesap Güncelle</title>
     <!-- Bootstrap core CSS -->
     <link href="/Content/css/bootstrap.min.css" rel="stylesheet">
     <link href="/Content/css/bootstrap-reset.css" rel="stylesheet">
@@ -29,27 +29,24 @@
 </head>
 <body class="login-body">
     <div class="container">
-        <form class="form-signin" method="post" action="/Login/LoginForm">
-            <h2 class="form-signin-heading">Akıllı Ev</h2>
+        <form class="form-signin" method="post" action="/User/UpdateUser">
+            <h2 class="form-signin-heading">Hesap Güncelle</h2>
             <div class="login-wrap">
+                <p>Bilgilerinizi giriniz</p>
                 <input type="text" name="userName" class="form-control" placeholder="Kullanıcı Adı" autofocus>
-                <input type="password" name="userPassword" class="form-control" placeholder="Şifre">
-                
-                <button class="btn btn-lg btn-login btn-block" type="submit">Giriş Yap</button>
-                <div class="registration">
-                    Henüz Bir Hesabın Yok mu?
-                    <a class="" href="/User/addUser">
-                        Yeni Hesap Oluştur
-                    </a>
-                </div>
-            </div>
-            </form>
-       
-    </div>
+                <input type="text" name="userPassword" class="form-control" placeholder="Şifre" autofocus>
+                <input type="text" name="mail" class="form-control" placeholder="Mail" Name" autofocus>
+                <input type="text" name="firstName" class="form-control" placeholder="Ad" autofocus>
+                <input type="text" name="lastName" class="form-control" placeholder="Soy Ad" autofocus>
 
-    <!-- js placed at the end of the document so the pages load faster -->
-    <script src="/Content/js/jquery.js"></script>
-    <script src="/Content/js/bootstrap.min.js"></script>
+            </div>
+            <div class="radios">
+
+                <button class="btn btn-lg btn-login btn-block" type="submit">Güncelle</button>
+
+            </div>
+        </form>
+    </div>
 
 </body>
 </html>

@@ -198,6 +198,7 @@
     <Compile Include="Controllers\AmountController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\UtilizationController.cs" />
     <Compile Include="Global.asax.cs">
@@ -303,6 +304,8 @@
     </Content>
     <Content Include="Views\Utilization\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\User\AddUser.cshtml" />
+    <Content Include="Views\User\UpdateUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -312,6 +315,7 @@
     <Folder Include="Content\img\" />
     <Folder Include="Content\js\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\Item\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

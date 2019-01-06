@@ -28,6 +28,7 @@ namespace iotWork.Controllers
             else
             {
                 Session["userID"] = user1.userID.ToString();
+                Session["userFullName"] = user1.firstName.ToString() + " "+user1.lastName.ToString();
             }
             
             return RedirectToAction("Index","Home");

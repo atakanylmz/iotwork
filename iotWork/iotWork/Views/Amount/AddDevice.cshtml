@@ -36,7 +36,7 @@
                         <div class="form-group ">
                             <label for="ccomment" class="control-label col-lg-2">Cihaz Tipi</label>
                             <div class="col-lg-10">
-                                <select class="form-control m-bot15">
+                                <select class="form-control m-bot15" name="typeID">
                                     @foreach (iotWork.Models.Type t in ViewBag.types)
                                     {
                                         <option value="@t.typeID">@t.typeName</option>
